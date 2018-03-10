@@ -1,0 +1,116 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8"
+    <style>
+    </style>
+  </head>
+  <body>
+    <script>
+      var inicio="Olá, seu nome é";
+      var nome= "Larissa Brambila Estevo.";
+      var inicio2="Você tem"
+      var idade= 18;
+      var sexoFeminino= true;
+      var peso=51.200;
+      alert(inicio +" "+ nome+" "+inicio2+" "+idade+" "+"anos");
+      if (idade<=18) {
+        alert("Novinho(a)");
+      }
+      else if (idade<=30) {
+        alert("Tiozinho(a)");
+      }
+      else {
+        alert("Tiozão");
+      }
+      var diasemana=new Date().getDay();
+      var dia;
+      switch (diasemana) {
+        case 0:
+          dia="Hoje é domingo!";
+          break;
+        case 1:
+          dia="Hoje é segunda!";
+          break;
+        case 2:
+          dia="Hoje é terça!";
+          break;
+        case 3:
+          dia="Hoje é quarta!";
+          break;
+        case 4:
+        dia="Hoje é quinta!";
+          break;
+        case 5:
+          dia="Hoje é sexta!";
+          break;
+        case 6:
+          dia="Hoje é Sábado!";
+          break;
+      }
+      var numero=prompt("Digite um número de 1 à 10");
+      function algromanos(decimal) {
+        switch (decimal) {
+          case 1:
+            return "I";
+          case 2:
+            return "II";
+          case 3:
+            return "III";
+          case 4:
+            return "IV";
+          case 5:
+            return "V";
+          case 6:
+            return "VI"
+          case 7:
+            return "VII"
+          case 8:
+              return "VII"
+          case 9:
+            return "IX"
+          case 10:
+            return "X"
+        }
+      }
+      alert(dia);
+      for(var i=10; i>=1; i--) {
+        alert(algromanos(parseInt(i)));
+      }
+      var Endereco = [];
+      // Endereco.push("Rua:jingi");
+      // Endereco.push("Cep:909099-345");
+      // Endereco.push("Número:190");
+      // Endereco.push("Complemento:23");
+      // Endereco.push("Bairro:Gimnga");
+      // Endereco.push("Cidade:Mgá");
+      // Endereco.push("Estado:Pr");
+      // var DadosPessoais = [];
+      // DadosPessoais.push("Nome:Larissa");
+      // DadosPessoais.push(Endereco);
+      // DadosPessoais.push("Telefone:99999-0000");
+      // DadosPessoais[0]= "Lily";
+      // DadosPessoais.splice(2,1);
+      // console.log(DadosPessoais);
+
+      var Dados = {
+        nome: "nome: Larissa",
+        sobrenome: "Brambila",
+        localizacao: {
+          Rua: "rua:gigig \n",
+          numero: "n:99 \n",
+          cep: "cep:2222 \n",
+          complemento: "complemento:fdfd \n",
+          bairro: "bairro:eeee",
+          cidade: "cidade:mga",
+          estado: "estado:pr",
+        },
+        Mostrar: function() {
+          console.log(this.nome+ " "+this.sobrenome+ " "+this.localizacao.Rua+" "+this.localizacao.numero+" "+this.localizacao.cep);
+          alert(this.nome+ " "+this.sobrenome+ " "+this.localizacao.Rua+" "+this.localizacao.numero+" "+this.localizacao.cep);
+        }
+      }
+      Dados.Mostrar();
+      console.log(Dados);
+    </script>
+  </body>
+</html>
